@@ -1,0 +1,1 @@
+\! echo "--- INSERTING EXAMPLE DATA ---"
