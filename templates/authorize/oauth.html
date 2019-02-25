@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Authorize{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+
+<div class="container col-lg-6">
+    <h1>Authorize with Oauth</h1>
+    <p class="lead">
+      Press Submit to be taken to the Oauth Provider for authentication.
+    </p>
+    <form role="form" method="POST" action="{{base_url}}/authorize">
+        <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
