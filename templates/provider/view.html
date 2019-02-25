@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}View Provider{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+
+<div class="container col-lg-6">
+    <h1>View Provider</h1>
+    <form role="form">
+        <div class="form-group">
+          <label for="application_name">Provider Key</label>
+          <input type="text" class="form-control" id="oauthprovider_key" name="oauthprovider_key" value="{{oauthprovider.oauthprovider_key}}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="application_name">Authorization URI</label>
+          <input type="text" class="form-control" id="authorization_uri" name="authorization_uri" value="{{oauthprovider.authorization_uri}}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="application_name">Callback URI</label>
+          <input type="text" class="form-control" id="callback_uri" name="callback_uri" value="{{oauthprovider.callback_uri}}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="application_name">Token URI</label>
+          <input type="text" class="form-control" id="token_uri" name="token_uri" value="{{oauthprovider.token_uri}}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="application_name">Client ID</label>
+          <input type="text" class="form-control" id="client_id" name="client_id" value="{{oauthprovider.client_id}}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="application_name">Client Secret</label>
+          <input type="text" class="form-control" id="client_secret" name="client_secret" value="{{oauthprovider.client_secret}}" readonly>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

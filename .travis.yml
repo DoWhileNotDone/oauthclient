@@ -7,6 +7,7 @@ services:
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y ant
+  - npm install -g gulp-cli
 install:
   - composer self-update
   - composer install --prefer-source --no-interaction
