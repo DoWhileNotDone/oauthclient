@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<project name="Oauth Server Project" default="info">
+<project name="Oauth Client Project" default="info">
   <target name="info">
-    <echo>This is the build file for the oauth server - please select the target you need.</echo>
+    <echo>This is the build file for the oauth client - please select the target you need.</echo>
     <echo>The default is to output this message. Run ant -projecthelp to see other targets</echo>
   </target>
   <target name="development" depends="composer-install,dev-database,dev-environment,npm-install,run-gulp" />
